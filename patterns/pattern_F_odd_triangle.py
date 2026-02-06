@@ -1,0 +1,10 @@
+# Pattern F — Odd Star Triangle (user version)
+
+n = int(input("Enter what unit length of triangle do you want? "))
+p = 1
+
+for i in range(n):
+    for j in range(1, p + 1):
+        print("*", end="")
+    p = p + 2
+    print()
