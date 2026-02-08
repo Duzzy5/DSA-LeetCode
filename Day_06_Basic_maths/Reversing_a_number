@@ -1,0 +1,11 @@
+n = int(input("Enter the number you want to reverse: "))
+o = 0
+
+sign = -1 if n < 0 else 1
+n = abs(n)
+
+while n != 0:
+    o = o * 10 + n % 10
+    n //= 10
+
+print("Reversed:", sign * o)
