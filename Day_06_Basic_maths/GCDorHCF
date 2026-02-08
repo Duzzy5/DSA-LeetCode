@@ -1,0 +1,11 @@
+#gcd between two numbers
+n = int(input("first number:"))
+o = int(input("second number:"))
+
+def gcd(a,b):
+    while b!=0:
+        c=b
+        b=a%b
+        a=c
+    print("gcd is ",a)
+gcd(n,o)  
