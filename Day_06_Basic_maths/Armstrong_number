@@ -1,0 +1,29 @@
+n = int(input("Enter a number: "))
+
+original = abs(n)
+temp = original
+
+# counting digits
+digits = 0
+while temp != 0:
+    temp //= 10
+    digits += 1
+
+# Special case for 0
+if original == 0:
+    digits = 1
+
+# Compute Armstrong sum
+temp = original
+armstrong_sum = 0
+
+while temp != 0:
+    digit = temp % 10
+    armstrong_sum += digit ** digits
+    temp //= 10
+
+# test
+if armstrong_sum == original:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
