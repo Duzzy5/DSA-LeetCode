@@ -1,0 +1,12 @@
+def is_sorted(arr):
+    for i in range(len(arr) - 1):  
+        if arr[i] > arr[i + 1]:    
+            return False
+    return True                   
+
+
+# test
+print(is_sorted([1,2,3,4,5]))   # T
+print(is_sorted([1,3,2,5]))     # F
+print(is_sorted([8]))           # T
+print(is_sorted([]))            # F
