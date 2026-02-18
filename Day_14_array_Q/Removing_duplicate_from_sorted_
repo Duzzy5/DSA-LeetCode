@@ -10,3 +10,6 @@ def remove_duplicates(arr):
             k += 1
 
     return k
+k=remove_duplicates(arr)
+print("Total uniques values",k)
+print("those unique values are",[:,k])
