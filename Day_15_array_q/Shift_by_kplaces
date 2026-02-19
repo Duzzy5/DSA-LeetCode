@@ -1,0 +1,14 @@
+def shift_k(arr, k):
+    n = len(arr)
+    k = k % n
+    
+    temp = arr[:k]
+    
+    for i in range(k, n):
+        arr[i-k] = arr[i]
+    
+    arr[n-k:] = temp
+    return arr
+kk=[1,2,3,4,5]
+k= int(input("Enter the value of k: "))
+print(shift_k(kk,k))
