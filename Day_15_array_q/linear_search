@@ -1,0 +1,10 @@
+def linearSearch(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+#example
+arr = [5,4,6,8,0,2,4,3,7,3,9]
+target = 3
+print("index of the ",target,"in array is ",linearSearch(arr,target))
